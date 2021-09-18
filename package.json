@@ -1,26 +1,41 @@
 {
-  "name": "khokho-tracker",
+  "name": "daily-sleep-tracker",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://zzz-tracker.herokuapp.com/",
   "dependencies": {
-    "@testing-library/jest-dom": "^5.11.4",
-    "@testing-library/react": "^11.1.0",
-    "@testing-library/user-event": "^12.1.10",
-    "husky": "^7.0.2",
-    "lint-staged": "^11.1.2",
+    "@angular/fire": "^6.1.5",
+    "@craco/craco": "^6.1.2",
+    "@material-ui/core": "^4.11.4",
+    "@tailwindcss/forms": "^0.3.3",
+    "@testing-library/jest-dom": "^5.13.0",
+    "@testing-library/react": "^11.2.7",
+    "@testing-library/user-event": "^12.8.3",
+    "axios": "^0.21.1",
+    "firebase": "^8.6.7",
+    "firebase-admin": "^9.9.0",
+    "flatpickr": "^4.6.9",
+    "gh-pages": "^3.2.0",
+    "gsap": "^3.6.1",
+    "moment": "^2.29.1",
+    "node-sass": "^6.0.0",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
+    "react-router-dom": "^5.2.0",
     "react-scripts": "4.0.3",
-    "stylelint": "^13.13.1",
-    "web-vitals": "^1.0.1"
+    "react-vis": "^1.11.7",
+    "sweetalert2": "^11.0.17",
+    "sweetalert2-react-content": "^4.0.1",
+    "uuid": "^8.3.2",
+    "web-vitals": "^1.1.2"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
+    "start": "craco start",
+    "build": "craco build",
+    "test": "craco test",
     "eject": "react-scripts eject",
-    "pre-commit": "lint-staged",
-    "lint-staged:js": "eslint --ext .js, .jsx,--format=pretty ./src && npm run lint-style"
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
@@ -41,23 +56,8 @@
     ]
   },
   "devDependencies": {
-    "eslint": "^7.32.0",
-    "eslint-plugin-react": "^7.25.2"
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged"
-    }
-  },
-  "lint-staged": {
-    ".jsx": [
-      "eslint --fix",
-      "git add"
-    ],
-    "**/*.less": "stylelint --syntax less",
-    "**/*.{js,jsx,ts,tsx}": "npm run lint-staged:js",
-    "**/*.{js,jsx,tsx,ts,less,md,json}": [
-      "prettier --write"
-    ]
+    "autoprefixer": "^9.8.6",
+    "postcss": "^7.0.35",
+    "tailwindcss": "npm:@tailwindcss/postcss7-compat@^2.1.4"
   }
 }
