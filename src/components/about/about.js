@@ -38,13 +38,13 @@ function About() {
         className="text-center font-bold my-10"
         ref={(el) => (titleText = el)}
       >
-        <p className="transition-all duration-500 text-black dark:text-yellow-500 text-7xl">
+        <p className="transition-all duration-500 text-black dark:text-yellow-500 text-4xl lg:text-7xl">
           <span className="transition-all duration-500 text-yellow-500 dark:text-white">
             KhoKho
           </span>{" "}
           Tracker
         </p>
-        <p className="transition-all duration-500 text-black dark:text-yellow-500 text-5xl my-5">
+        <p className="transition-all duration-500 text-black dark:text-yellow-500 text-xl md:text-4xl lg:text-5xl my-5">
           More Than Just A{" "}
           <span className="transition-all duration-500 text-yellow-500 dark:text-white">
             Sleep Tracker
@@ -56,16 +56,16 @@ function About() {
           <img src={Sleep} alt="" />
         </div>
         <div className="text-3xl font-bold mb-8 mr-10 lg:mr-20 text">
-          <p className="text bg-yellow-400 text-gray-800 dark:text-white text-center p-10 lg:p-8 mt-5 ml-5 lg:-ml-10 mr-5 lg:mr-14 rounded-full">
+          <p className="text-xs md:text-xl lg:text-xl bg-yellow-400 text-gray-800 dark:text-white text-center p-10 lg:p-8 mt-5 ml-5 lg:-ml-10 mr-5 lg:mr-14 rounded-full">
             Track your sleep everyday using details such as the date, the time
             you went to sleep and the time you woke up.
           </p>
-          <p className="text bg-gray-600 dark:bg-gray-500 text-yellow-500 dark:text-yellow-400 text-center p-10 lg:p-8 rounded-full my-10 ml-20">
+          <p className="text-xs md:text-xl lg:text-xl bg-gray-600 dark:bg-gray-500 text-yellow-500 dark:text-yellow-400 text-center p-10 lg:p-8 rounded-full my-10 ml-20">
             Once you have a few entries,{" "}
             <span className="text-white dark:text-white">KhoKho Tracker</span>{" "}
             can offer you some insights about your sleep health.
           </p>
-          <p className="text bg-yellow-400 text-gray-800 dark:text-white text-center p-10 lg:p-8 mt-5 ml-5 lg:-ml-10 mr-5 lg:mr-14 rounded-full">
+          <p className="text-xs md:text-xl lg:text-xl bg-yellow-400 text-gray-800 dark:text-white text-center p-10 lg:p-8 mt-5 ml-5 lg:-ml-10 mr-5 lg:mr-14 rounded-full">
             With the use of the graph, you can track patterns and bad habits
             that have been affecting your overall performance
           </p>

@@ -6,7 +6,7 @@ function Footer() {
       className={`${
         window.location.href.includes("login") ||
         window.location.href.includes("signup")
-          ? "absolute"
+          ? "relative"
           : "relative"
       } ${
         window.location.href.includes("entries") ? "hidden" : "block"

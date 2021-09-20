@@ -107,7 +107,7 @@ function Dashboard() {
           >
             <XAxis
               style={{
-                fontSize: 12,
+                fontSize: 10,
                 fontWeight: "bold",
                 fill: `${
                   document.documentElement.classList.contains("dark")
@@ -118,7 +118,7 @@ function Dashboard() {
             />
             <YAxis
               style={{
-                fontSize: 16,
+                fontSize: 12,
                 fontWeight: "bold",
                 fill: `${
                   document.documentElement.classList.contains("dark")
@@ -148,25 +148,25 @@ function Dashboard() {
             <h1 className="text-3xl font-bold mb-3 text-black dark:text-yellow-500 transition-all duration-500">
               Stats
             </h1>
-            <h1 className="text-xl font-bold my-5">
+            <h1 className="text-xxs md:text-xl font-bold my-5">
               Average sleep time: <br />{" "}
               <span className="text-yellow-400 text-3xl">
                 {averageSleepTime} Hours
               </span>
             </h1>
-            <h1 className="text-xl font-bold my-5">
+            <h1 className="text-xxs md:text-xl font-bold my-5">
               Days with good sleep time: <br />
               <span className="text-yellow-400 text-3xl">{goodSleep}</span>
             </h1>
-            <h1 className="text-xl font-bold my-5">
+            <h1 className="text-xxs md:text-xl font-bold my-5">
               Days with less than 6 hours sleep: <br />
               <span className="text-yellow-400 text-3xl">{less6Hours}</span>
             </h1>
-            <h1 className="text-xl font-bold my-5">
+            <h1 className="text-xxs md:text-xl font-bold my-5">
               Days with more than 8 hours sleep: <br />
               <span className="text-yellow-400 text-3xl">{more8Hours}</span>
             </h1>
-            <h1 className="text-lg md:text-xl lg:text-xl font-bold mt-10 mx-5">
+            <h1 className="text-sm  md:text-xs lg:text-xl font-bold mt-10 mx-5">
               {averageSleepTime < 6
                 ? "You should sleep more. Healthy adults need between 6 and 8 hours of sleep"
                 : averageSleepTime > 8

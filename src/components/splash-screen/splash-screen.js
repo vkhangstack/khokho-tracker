@@ -43,10 +43,10 @@ function SplashScreen() {
             jumbotronItem = el;
           }}
         >
-          <h1 className="text-7xl text-black dark:text-yellow-400 font-bold transition-all duration-500">
+          <h1 className="text-6xl text-black dark:text-yellow-400 font-bold transition-all duration-500">
             KhoKho Tracker
           </h1>
-          <p className="text-4xl p-6 text-black dark:text-white font-bold transition-all duration-500">
+          <p className="text-2xl p-6 text-black dark:text-white font-bold transition-all duration-500">
             Create an account and track your daily sleep
           </p>
           <Link
